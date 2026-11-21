@@ -1,0 +1,176 @@
+
+/* Hero Section */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Keep text above the overlay */
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero heading */
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+/* Hero paragraph */
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Responsive design for phones */
+@media screen and (max-width: 576px) {
+    .hero {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+    /* Menu Section */
+.menu-section {
+    background-color: #f8f5f0;
+}
+
+.menu-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Menu Card Images */
+.menu-section .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Menu Cards */
+.menu-section .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Hover Effect */
+.menu-section .card:hover {
+    transform: translateY(-5px);
+}
+}
+/* About Section */
+.about-section {
+    background-color: #ffffff;
+}
+
+.about-section img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.about-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+/* Contact Section */
+.contact-section {
+    background-color: #f8f5f0;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contact-section form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section .form-control {
+    padding: 12px;
+}
+
+.contact-section .btn {
+    padding: 10px 25px;
+}
+
+/* Footer */
+.footer {
+    background-color: #212121;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.footer p {
+    color: #cccccc;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffc107;
+}
+
+.footer hr {
+    border-color: #777;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
